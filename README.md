@@ -8,21 +8,21 @@ In this repository we share the key elements of the investigation in order to gi
 ![Alt text](https://github.com/luistovar53/vision_system_for_hook_inspection/blob/97bd8d7e48c95c57c08506d9302dd5476268b677/Hook%20Inspection.png)
 
 
-## Procesamiento de imágenes para inspección
+## Image processing for inspection
 
-> Conversión a escala de grises
-
-
-> Preprocesamiento de imagen de acuerdo al ambiente de medición configurado
+> Gray levels convertion
 
 
-> Extracción de contorno
+> Image processing based on environment settings
 
 
-> Generar patrón válido, patrón no válido e imágen a inspeccionar
+> Profile extraction
 
 
-> Algoritmo kNN
+> Valid, Not-Valid and 'Image for inspection' pattern generation
+
+
+> kNN Algorithm
 
 Python Code
 ```py
@@ -49,13 +49,13 @@ def knn(patternTest, patternPass, patternWrong):
 
 Java Code
 ```java
-public int knn(int[][] Pass, int[][] Wrong) { // retornará 1 si 'Pass' , 0 si 'Wrong', -1 si error
+public int knn(int[][] Pass, int[][] Wrong) { // returns 1 if 'Pass' , 0 if 'Wrong', -1 if 'error'
   int i, j;
   int r = -1;
   
   double distPass, distWrong, s;
   
-  // Caclular distancia hacia patternPass
+  // Distance to patternPass calculation
   s = 0.0;
   for(i = 0; i < height; i++) {
     for(j = 0; j < width; j++) {
@@ -65,7 +65,7 @@ public int knn(int[][] Pass, int[][] Wrong) { // retornará 1 si 'Pass' , 0 si '
     
   distPass = Math.sqrt(s);
   
-  // Caclular distancia hacia patternWrong
+  // Distance to patternWrong calculation
   s = 0.0;
   for(i = 0; i < height; i++) {
     for(j = 0; j < width; j++) {
@@ -93,4 +93,4 @@ public int knn(int[][] Pass, int[][] Wrong) { // retornará 1 si 'Pass' , 0 si '
 ```
 
 
-> Resultado de clasificación
+> Clasification result
