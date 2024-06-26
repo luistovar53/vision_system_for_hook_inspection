@@ -5,22 +5,22 @@ In this repository we share the key elements of the investigation in order to gi
 
 
 ## Hook inspection process
-<!---
-![Alt text](https://github.com/luistovar53/vision_system_for_hook_inspection/blob/d42d473fa4559e5f8507fefc9244aceea6e48c3e/Inspeccion%20Gancho.png)
---->
-
-![Alt text](https://github.com/luistovar53/vision_system_for_hook_inspection/blob/c06c37a9c89d45d5e4ef9e7ab5f583ea75edfe9d/Hook%20Inspection.png)
+![Alt text](https://github.com/luistovar53/vision_system_for_hook_inspection/blob/97bd8d7e48c95c57c08506d9302dd5476268b677/Hook%20Inspection.png)
 
 
 ## Procesamiento de imágenes para inspección
 
 > Conversión a escala de grises
 
+
 > Preprocesamiento de imagen de acuerdo al ambiente de medición configurado
+
 
 > Extracción de contorno
 
+
 > Generar patrón válido, patrón no válido e imágen a inspeccionar
+
 
 > Algoritmo kNN
 
@@ -91,5 +91,6 @@ public int knn(int[][] Pass, int[][] Wrong) { // retornará 1 si 'Pass' , 0 si '
   return r;
 }
 ```
+
 
 > Resultado de clasificación
