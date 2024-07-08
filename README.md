@@ -8,6 +8,8 @@ In this repository we share the key elements of the investigation in order to gi
 ![Alt text](https://github.com/luistovar53/vision_system_for_hook_inspection/blob/97bd8d7e48c95c57c08506d9302dd5476268b677/Hook%20Inspection.png)
 
 
+The hook used is a model from the Green Pin mark, the step file is here: [hkk03a010.stp](https://github.com/luistovar53/vision_system_for_hook_inspection/blob/ad5de15a89968ac877822f64803ab47092c37bf1/hkk03a010.stp)
+
 ## Image processing for inspection
 
 > Gray levels convertion
