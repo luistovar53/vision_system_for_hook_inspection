@@ -14,17 +14,16 @@ The hook used is a model from the Green Pin mark, the step file is here: [hkk03a
 
 > Gray levels convertion
 
-
 > Image processing based on environment settings
-
 
 > Profile extraction
 
-
 > Valid, Not-Valid and 'Image for inspection' pattern generation
 
-
 > kNN Algorithm
+
+> Clasification result
+
 
 Python Code
 ```py
@@ -93,6 +92,3 @@ public int knn(int[][] Pass, int[][] Wrong) { // returns 1 if 'Pass' , 0 if 'Wro
   return r;
 }
 ```
-
-
-> Clasification result
